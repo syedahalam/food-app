@@ -124,10 +124,9 @@ Privacy & terms
 - Navigation
 - Hero
 - Featured in
-- Features
 - How it works
 - Meals (and list of diets)
 - Testimonials + gallery
-- Pricing
+- Pricing + Features
 - CTA
 - Footer

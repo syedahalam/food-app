@@ -1,0 +1,139 @@
+/* 
+--- 01 Typography
+
+Font Sizes -- 10 / 12/ 14/ 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+Font Weight -- 400
+Font Line Height - default 1
+
+-- Spacing Systems -- 
+
+
+-- 02 Colors 
+Primary : #e67e22
+tints: ##fae5d3
+
+
+-- 05 SHADOWS
+
+-- 06 BORDER RADIUS
+
+-- 07 WHITESPACE --  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	/* font-size: 10px; */
+	/* percentage of user's browser font size */
+	font-size: 62.5%;
+}
+body {
+	font-family: 'Rubik', sans-serif;
+	line-height: 1;
+	font-weight: 400;
+	color: #555;
+}
+.section-hero {
+	background-color: #fae5d3;
+	padding: 10rem 0;
+}
+.hero {
+	max-width: 130rem;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 9.6rem;
+	align-items: center;
+}
+.hero-img {
+	width: 100%;
+}
+.hero-2-img {
+	width: 100%;
+	z-index: 2;
+}
+.heading-primary {
+	font-size: 5.2rem;
+	font-weight: 700;
+	line-height: 1.1;
+	color: #333;
+	letter-spacing: -0.5px;
+	margin-bottom: 3.2rem;
+}
+.hero-description {
+	font-size: 2rem;
+	line-height: 1.6;
+	margin-bottom: 4.3rem;
+}
+.btn:link,
+.btn:visited {
+	display: inline-block;
+	background-color: #e67e22;
+	font-size: 2rem;
+	font-weight: 600;
+	color: #fff;
+	padding: 1.6rem 3.2rem;
+	border-radius: 9px;
+	text-decoration: none;
+
+	/* to make smooth transition for hover effect which only put on original state */
+	transition: all 0.3s;
+}
+.btn--full:link,
+.btn--full:visited {
+	background-color: #e67e22;
+	color: #fff;
+}
+.btn--full:hover,
+.btn--full:active {
+	background-color: #cf711f;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+	background-color: #fff;
+	color: #555;
+}
+.btn--outline:hover,
+.btn--outline:active {
+	background-color: #fae5d3;
+
+	/* border: 3px solid white; */
+
+	/* trick to add border inside */
+	box-shadow: inset 0 0 0 3px #fff;
+}
+.margin-right-sm {
+	margin-right: 1.6rem !important;
+}
+.delivered-meals {
+	display: flex;
+	margin-top: 8rem;
+	align-items: center;
+	gap: 1.6rem;
+}
+.delivered-imgs {
+	display: flex;
+}
+.delivered-imgs img {
+	height: 4.8rem;
+	width: 4.8rem;
+	border-radius: 50%;
+	margin-right: -1.6rem;
+	border: 3px solid #fae5d3;
+}
+.delivered-imgs img:last-child {
+	margin: 0;
+}
+.delivered-text {
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+.delivered-text span {
+	color: #9b5110;
+	font-weight: 700;
+}
