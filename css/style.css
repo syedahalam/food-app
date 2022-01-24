@@ -33,12 +33,15 @@ html {
 	/* font-size: 10px; */
 	/* percentage of user's browser font size */
 	font-size: 62.5%;
+	overflow-x: hidden;
 }
 body {
 	font-family: 'Rubik', sans-serif;
 	line-height: 1;
 	font-weight: 400;
 	color: #555;
+	/* only works if there is nothing absolutely positioned with rlation to body */
+	overflow-x: hidden;
 }
 /* header */
 .header {
@@ -49,6 +52,7 @@ body {
 	/* coz we wanted to make it sticky thats why height is given */
 	height: 9.6rem;
 	padding: 0 48px;
+	position: relative;
 }
 .logo {
 	height: 2.2rem;
@@ -85,9 +89,26 @@ body {
 	background-color: #fae5d3;
 	color: #cf711f;
 }
+/* MOBILE */
+
 /* *************************************
 General components
 */
+.btn-mobile-nav {
+	border: none;
+	background-color: none;
+	cursor: pointer;
+
+	display: none;
+}
+.icon-mobile-nav {
+	height: 4.8rem;
+	width: 4.8rem;
+	color: #333;
+}
+.icon-mobile-nav[name='close-outline'] {
+	display: none;
+}
 .section-hero {
 	background-color: #fae5d3;
 	padding: 4.8rem 0 9.6rem 0;
@@ -394,7 +415,7 @@ General components
 }
 
 .meal-tags {
-	margin: 1.2rem;
+	margin-bottom: 1.2rem;
 	display: flex;
 	gap: 0.4rem;
 }
@@ -447,6 +468,7 @@ General components
 	display: flex;
 	align-items: center;
 	gap: 1.6rem;
+	line-height: 1.2;
 }
 .all-recipes {
 	text-align: center;
